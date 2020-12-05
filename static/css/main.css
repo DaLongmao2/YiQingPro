@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    background-color: #333;
+}
+
+#title{
+	position: absolute;
+	width: 40%;
+	height: 10%;
+	top: 0;
+	left: 30%;
+	color: #ffffff;
+	font-size: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#time{
+	position: absolute;
+    width: 30%;
+	height: 10%;
+	right: 2%;
+	top: 1%;
+	color: #FFFFFF;
+	font-size: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#left1{
+    height: 45%;
+    width: 30%;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    top: 10%;
+}
+
+#left2{
+    height: 45%;
+    width: 30%;
+    background-color: darkgoldenrod;
+    position: absolute;
+    left: 0;
+    top: 55%;
+}
+
+#right1{
+    height: 45%;
+    width: 30%;
+    background-color: red;
+    position: absolute;
+    right: 0;
+    top: 10%;
+}
+
+#right2{
+    height: 45%;
+    width: 30%;
+    background-color: darkgoldenrod;
+    position: absolute;
+    right: 0;
+    top: 55%;
+}
+
+#center1{
+    height: 30%;
+    width: 40%;
+    /*background-color: black;*/
+    position: absolute;
+    left: 30%;
+    top: 10%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#center2{
+    height: 60%;
+    width: 40%;
+    background-color: darkseagreen;
+    position: absolute;
+    left: 30%;
+    top: 40%;
+}
+
+.num{
+    /*转换为行级标签*/
+    float: left;
+    /*平分宽度*/
+    width: 25%;
+    height: 100%;
+    text-align: center;
+}
+
+.num h1{
+    color: gold;
+}
+
+.num{
+    color: white;
+    font-family: 幼园, serif;
+}

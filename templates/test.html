@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="../static/js/jquery-3.0.0.min.js"></script>
+    <title>Test</title>
+</head>
+<body>
+<h1>Hello Word！</h1>
+<h1>Hello Flask！</h1>
+
+<div id="box">这是一个IDV</div>
+
+<button id="bun" type="submit">点击一下</button>
+
+<script>
+    // 点击时间 点击 则执行函数
+    $('#bun').click(function (){
+        // ajax
+        $.ajax({
+            // 访问的的路径(127.0.0.1/ajax/)
+            url : "/ajax/",
+            // 访问类型 默认不写  GET
+            type : "post",
+            // 携带参数
+            data : {
+                "name" : "张依",
+                "age" : 18
+            },
+            // success 如果成功则执行
+            // data 就是返回过来的参数
+            success:function (data) {
+                alert(data)
+            },
+            // error 如果出错执行
+            error:function () {
+                alert('请求失败')
+            }
+        })
+    })
+</script>
+
+</body
+</html>
